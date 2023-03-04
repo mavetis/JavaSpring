@@ -1,0 +1,5 @@
+package com.marina.event.controllers;
+
+public class UserController {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.marina.one_to_one.service.LicenseSerivce.java&apos; to &apos;LicenseService.java&apos;&#x0A;- Original project: &apos;one_to_one&apos;&#x0A;- Original element: &apos;com.marina.one_to_one.service.LicenseSerivce.java&apos;&#x0A;- Renamed element: &apos;com.marina.one_to_one.service.LicenseService.java&apos;" description="Rename compilation unit &apos;LicenseSerivce.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.marina.one_to_one.service{LicenseSerivce.java" name="LicenseService.java" references="false" stamp="1647033789388" version="1.0"/>
+</session>

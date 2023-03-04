@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.marina.studentRoster&apos; to &apos;com.marina.dojosAndNinjas&apos;&#x0A;- Original project: &apos;dojosAndNinjas&apos;&#x0A;- Original element: &apos;dojosAndNinjas/src/main/java/com.marina.studentRoster&apos;&#x0A;- Renamed element: &apos;dojosAndNinjas/src/main/java/com.marina.dojosAndNinjas&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.marina.studentRoster&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.marina.studentRoster" name="com.marina.dojosAndNinjas" qualified="false" references="true" stamp="1647673319808" textual="false" version="1.0"/>
+</session>

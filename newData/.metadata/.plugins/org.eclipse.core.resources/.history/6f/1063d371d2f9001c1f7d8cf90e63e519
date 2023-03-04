@@ -1,0 +1,5 @@
+package com.marina.of.repo;
+
+public interface TagRepo {
+
+}

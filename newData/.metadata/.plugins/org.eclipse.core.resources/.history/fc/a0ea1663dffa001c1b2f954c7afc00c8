@@ -1,0 +1,54 @@
+package com.marina.of.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.marina.of.models.Answer;
+import com.marina.of.models.NewQuestion;
+import com.marina.of.models.Question;
+import com.marina.of.models.Tag;
+import com.marina.of.repo.AnswerRepo;
+import com.marina.of.repo.QuestionRepo;
+import com.marina.of.repo.TagRepo;
+
+@Service
+public class MainService {
+	private QuestionRepo qRepo;
+	private AnswerRepo aRepo;
+	private TagRepo tRepo;
+	
+	public MainService(QuestionRepo qRepo, AnswerRepo aRepo, TagRepo tRepo) {
+		this.qRepo=qRepo;
+		this.aRepo=aRepo;
+		this.tRepo=tRepo;
+	}
+	
+	public List<Question>getQuestion(){
+		return this.qRepo.findAll();
+	}
+	
+	public Question getQuestion(Long id) {
+		return this.qRepo.findById(id).orElse(null);
+	}
+	
+	public void createQuestion(NewQuestion question) {
+		List<Tag>questionsTags = new ArrayList<Tag>();
+		for(String subject:question.splitTags()) {
+			Tag tag = this.tRepo.findBySubject(subject).orElse(null);
+			if(tag==null) {
+				tag = new Tag(subject);
+				this.tRepo.save(tag);
+			}
+			if(!questionsTags.contains(tag)) {
+				questionsTags.add(tag);
+			}
+		}
+		Question newQuestion = new Question(question.getQuestion(),questionsTags);
+		this.qRepo.save(newQuestion);
+	}
+	public Answer createAnswer(Answer answer) {
+		return this.aRepo.save(answer);
+	}
+}

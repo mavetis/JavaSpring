@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.marina.overflow.models.QuestionsTags&apos; to &apos;QuestionTag&apos;&#x0A;- Original project: &apos;overflow&apos;&#x0A;- Original element: &apos;com.marina.overflow.models.QuestionsTags&apos;&#x0A;- Renamed element: &apos;com.marina.overflow.models.QuestionTag&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;QuestionsTags&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.marina.overflow.models{QuestionsTags.java[QuestionsTags" matchStrategy="1" name="QuestionTag" qualified="false" references="true" similarDeclarations="false" stamp="1655182976090" textual="false" version="1.0"/>
+</session>
